@@ -1,0 +1,19 @@
+E:\py\python.exe E:/py/爬虫开发/try1.py
+<a href="//www.jikexueyuan.com/course/995.html" target="_blank">
+            <img title="定向爬虫：简单的模拟登录" class="lessonimg" alt="定向爬虫：简单的模拟登录" src="https://a1.jikexueyuan.com/home/201505/29/ac0e/5567cb35a6939.jpg">
+            <div class="lessonplay" style="opacity: 0;">
+                <i class="playericon"></i>
+            </div>
+            <div class="lessonplay" style="opacity: 0;">
+                <div class="cricle">
+                    <div class="mask"></div>
+                    <div class="left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="cright">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="text"></div>
+                </div>
+            </div>
+        </a>
