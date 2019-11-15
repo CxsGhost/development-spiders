@@ -44,6 +44,8 @@ class spider(object):
         pool.map(spider1.get_all_class, url)
 
         for page_code in spider.class_code:
+            #  此处无论调用类属性还是实例属性都可以，但实际上由于实例属性的优先性
+            # 总是会引用实例属性的列表，因为在上文中我们对实例属性进行了append操作
             # 真正的源代码还在page code这个单元素列表中，所以下方使用正则表达式的时候，还需要加入一个索引
             list_1 = re.findall('class="lessonimg" title="(.*?)"', page_code[0], re.S)
             list_2 = re.findall('<p style="height: 0px; opacity: 0; display: none;">(.*?)</p>'\
