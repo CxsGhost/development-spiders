@@ -30,6 +30,7 @@ def Spiders(url):
     qp_html = Get_Html(url)
     list_number = Statistics(qp_html)
     html_new = qp_html.text.replace(r'<!--', '"').replace(r'-->', '"')
+    # 没replace之前用xpath得到的是空的，就很奇怪，后来百度以后的发现，原来是那些代码被注释起来了
     selector = etree.HTML(html_new)
     for i in range(1, list_number):
         data_field = selector.xpath('//*[@id="thread_list"]/li[{}]'.format(i))
